@@ -8,7 +8,7 @@
 | Module | 주제 | 상태 | 노트 |
 |---|---|---|---|
 | 001 | Python Fundamentals for Infrastructure | ✅ 완료 | [notes](modules/module-001-python-fundamentals/notes) |
-| 002 | Linux Essentials | 🔄 진행 중 (6/8) | [notes](modules/module-002-linux-essentials/notes) |
+| 002 | Linux Essentials | ✅ 완료 | [notes](modules/module-002-linux-essentials/notes) |
 | 003 | Git & Version Control | ⬜ | |
 | 004 | ML Basics (PyTorch/TensorFlow) | ⬜ | |
 | 005 | Docker & Containerization | ⬜ | |
@@ -28,8 +28,8 @@
 | 04 | systemd와 로그 | [lesson-04](modules/module-002-linux-essentials/notes/lesson-04-systemd-and-logs.md) |
 | 05 | Bash 스크립팅 기초 | [lesson-05](modules/module-002-linux-essentials/notes/lesson-05-bash-basics.md) |
 | 06 | Bash 스크립팅 심화 | [lesson-06](modules/module-002-linux-essentials/notes/lesson-06-bash-advanced.md) |
-| 07 | grep / sed / awk, 로그 분석 | 예정 |
-| 08 | 네트워킹과 종합 트러블슈팅 | 예정 |
+| 07 | 텍스트 처리와 로그 분석 | [lesson-07](modules/module-002-linux-essentials/notes/lesson-07-text-processing.md) |
+| 08 | 네트워킹과 종합 트러블슈팅 | [lesson-08](modules/module-002-linux-essentials/notes/lesson-08-networking-troubleshooting.md) |
 
 ## 구조
 
