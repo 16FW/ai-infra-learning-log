@@ -218,7 +218,8 @@ Prometheus가 push가 아닌 **pull**을 택한 이유: push면 "안 보내는 �
 - `systemctl enable`은 `*.wants/`에 심볼릭 링크를 만드는 것이다.
 - `enable`과 `start`는 독립적이다.
 - 서비스가 `failed`일 때 `status=` 값으로 방향을 좁힌다
-  (126=실행 권한, 127=명령 없음, 203=shebang/실행 형식, SIGKILL=OOM 등).
+  (203/EXEC=실행 권한·shebang·실행 형식 문제, 127=명령 없음, 126=셸이 보고한 실행 불가,
+  SIGKILL=OOM 등).
 - "무엇을 할지"와 "언제 할지"를 분리하는 이유.
 
 ## 내 말로 3줄 요약
