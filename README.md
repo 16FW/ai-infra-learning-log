@@ -9,7 +9,7 @@
 |---|---|---|---|
 | 001 | Python Fundamentals for Infrastructure | ✅ 완료 | [notes](modules/module-001-python-fundamentals/notes) |
 | 002 | Linux Essentials | ✅ 완료 | [notes](modules/module-002-linux-essentials/notes) |
-| 003 | Git & Version Control | ⬜ | |
+| 003 | Git & Version Control | ⬜ |진행 중 (Lesson 4/6)|
 | 004 | ML Basics (PyTorch/TensorFlow) | ⬜ | |
 | 005 | Docker & Containerization | ⬜ | |
 | 006 | Kubernetes Introduction | ⬜ | |
