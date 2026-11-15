@@ -3,8 +3,8 @@
 > **Junior AI Infrastructure Engineer**가 되기 위한 학습 기록입니다.
 > [ai-infra-junior-engineer-learning](https://github.com/ai-infra-curriculum/ai-infra-junior-engineer-learning) 커리큘럼(10 Modules + 5 Projects)을 순서대로 따라가며, 모듈마다 **배운 개념을 내 말로 정리한 노트**와 **직접 작성한 실습 코드**를 남깁니다.
 
-![modules](https://img.shields.io/badge/modules-2%2F10%20done-blue)
-![current](https://img.shields.io/badge/now-Module%20003%20Git-orange)
+![modules](https://img.shields.io/badge/modules-3%2F10%20done-blue)
+![current](https://img.shields.io/badge/now-Module%20004%20ML%20Basics-orange)
 ![env](https://img.shields.io/badge/env-WSL2%20Ubuntu-informational)
 ![python](https://img.shields.io/badge/python-3.12-3776AB)
 
@@ -25,13 +25,13 @@ Data → Training Pipeline → Model Registry → CI/CD → Docker → Kubernete
 
 | 항목 | 내용 |
 |---|---|
-| **진행 중** | Module 003 — Git & Version Control (Lesson 5/6) |
-| **완료한 모듈** | 001 Python, 002 Linux |
+| **진행 중** | Module 004 — ML Basics (PyTorch/TensorFlow) |
+| **완료한 모듈** | 001 Python, 002 Linux, 003 Git |
 | **다음 마일스톤** | Module 006 완료 후 **Project 01** (첫 포트폴리오 프로젝트) 시작 |
-| **마지막 업데이트** | 2026-11 |
+| **마지막 업데이트** | 2026-11-16 |
 
 ```
-Modules   ██████░░░░░░░░░░░░░░  2 / 10
+Modules   ██████░░░░░░░░░░░░░░  3 / 10
 Projects  ░░░░░░░░░░░░░░░░░░░░  0 / 5
 ```
 
@@ -43,8 +43,8 @@ Projects  ░░░░░░░░░░░░░░░░░░░░  0 / 5
 |---|---|---|---|---|---|
 | **001** | Python Fundamentals for Infrastructure | venv, logging, 예외 처리, subprocess, argparse, pytest | 15h | ✅ 완료 | [notes](modules/module-001-python-fundamentals/notes) |
 | **002** | Linux Essentials | 파일시스템, 권한, 프로세스/시그널, systemd, Bash, 네트워킹 | 15h | ✅ 완료 | [notes](modules/module-002-linux-essentials/notes) |
-| **003** | Git & Version Control | 내부 모델, branch/merge, remote, 협업 워크플로우, rebase | 10h | 🔄 진행 중 (4/6) | — |
-| **004** | ML Basics (PyTorch/TensorFlow) | 학습 루프, 평가 지표, ONNX/TorchScript, GPU 기초 | 20h | ⬜ 예정 | |
+| **003** | Git & Version Control | 내부 모델, branch/merge, remote, 협업 워크플로우, rebase | 10h | ✅ 완료 | [notes](modules/module-003-git/notes) |
+| **004** | ML Basics (PyTorch/TensorFlow) | 학습 루프, 평가 지표, ONNX/TorchScript, GPU 기초 | 20h | 🔄 진행 중 | |
 | **005** | Docker & Containerization | 이미지 레이어, multi-stage build, Compose, 리소스 제한 | 15h | ⬜ 예정 | |
 | **006** | Kubernetes Introduction | Pod/Deployment/Service, ConfigMap/Secret, Helm, HPA | 20h | ⬜ 예정 | |
 | **007** | APIs & Web Services | REST, FastAPI, 인증, rate limiting, Locust 부하 테스트 | 15h | ⬜ 예정 | |
