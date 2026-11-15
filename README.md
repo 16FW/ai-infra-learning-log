@@ -25,7 +25,7 @@ Data → Training Pipeline → Model Registry → CI/CD → Docker → Kubernete
 
 | 항목 | 내용 |
 |---|---|
-| **진행 중** | Module 003 — Git & Version Control (Lesson 4/6) |
+| **진행 중** | Module 003 — Git & Version Control (Lesson 5/6) |
 | **완료한 모듈** | 001 Python, 002 Linux |
 | **다음 마일스톤** | Module 006 완료 후 **Project 01** (첫 포트폴리오 프로젝트) 시작 |
 | **마지막 업데이트** | 2026-11 |
