@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Check AWS key pattern
+        shell: bash
+        run: |
+          if LC_ALL=C grep -rIlE \
+            --exclude-dir=.git \
+            'AKIA[A-Z0-9]{16}' .; then
+            echo "::error::AWS access key-like pattern detected."
+            exit 1
+          else
+            rc=$?
+            if [ "$rc" -ne 1 ]; then
+              echo "::error::Key scan failed."
+              exit "$rc"
+            fi
+          fi
+
+      - name: Check Python syntax
+        shell: bash
+        run: |
+          find . \
+            -type d -name .git -prune -o \
+            -type f -name '*.py' \
+            -exec python3 -m py_compile {} +
