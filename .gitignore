@@ -233,3 +233,15 @@ mlruns/
 
 # ===== 에디터 =====
 .vscode/
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
+*.safetensors
+*.bin
+saved_model/
+.venv/
+__pycache__/
+*.joblib
+*.pkl
