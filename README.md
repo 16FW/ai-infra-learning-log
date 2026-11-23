@@ -3,8 +3,8 @@
 > **Junior AI Infrastructure Engineer**가 되기 위한 학습 기록입니다.
 > [ai-infra-junior-engineer-learning](https://github.com/ai-infra-curriculum/ai-infra-junior-engineer-learning) 커리큘럼(10 Modules + 5 Projects)을 순서대로 따라가며, 모듈마다 **배운 개념을 내 말로 정리한 노트**와 **직접 작성한 실습 코드**를 남깁니다.
 
-![modules](https://img.shields.io/badge/modules-3%2F10%20done-blue)
-![current](https://img.shields.io/badge/now-Module%20004%20ML%20Basics-orange)
+![modules](https://img.shields.io/badge/modules-4%2F10%20done-blue)
+![current](https://img.shields.io/badge/now-Module%20005%20Docker-orange)
 ![env](https://img.shields.io/badge/env-WSL2%20Ubuntu-informational)
 ![python](https://img.shields.io/badge/python-3.12-3776AB)
 
@@ -25,13 +25,13 @@ Data → Training Pipeline → Model Registry → CI/CD → Docker → Kubernete
 
 | 항목 | 내용 |
 |---|---|
-| **진행 중** | Module 004 — ML Basics (PyTorch/TensorFlow) |
-| **완료한 모듈** | 001 Python, 002 Linux, 003 Git |
+| **진행 중** | Module 005 — Docker & Containerization |
+| **완료한 모듈** | 001 Python, 002 Linux, 003 Git, 004 ML Basics |
 | **다음 마일스톤** | Module 006 완료 후 **Project 01** (첫 포트폴리오 프로젝트) 시작 |
-| **마지막 업데이트** | 2026-11-16 |
+| **마지막 업데이트** | 2026-11-23 |
 
 ```
-Modules   ██████░░░░░░░░░░░░░░  3 / 10
+Modules   ████████░░░░░░░░░░░░  4 / 10
 Projects  ░░░░░░░░░░░░░░░░░░░░  0 / 5
 ```
 
@@ -44,8 +44,8 @@ Projects  ░░░░░░░░░░░░░░░░░░░░  0 / 5
 | **001** | Python Fundamentals for Infrastructure | venv, logging, 예외 처리, subprocess, argparse, pytest | 15h | ✅ 완료 | [notes](modules/module-001-python-fundamentals/notes) |
 | **002** | Linux Essentials | 파일시스템, 권한, 프로세스/시그널, systemd, Bash, 네트워킹 | 15h | ✅ 완료 | [notes](modules/module-002-linux-essentials/notes) |
 | **003** | Git & Version Control | 내부 모델, branch/merge, remote, 협업 워크플로우, rebase | 10h | ✅ 완료 | [notes](modules/module-003-git/notes) |
-| **004** | ML Basics (PyTorch/TensorFlow) | 학습 루프, 평가 지표, ONNX/TorchScript, GPU 기초 | 20h | 🔄 진행 중 | |
-| **005** | Docker & Containerization | 이미지 레이어, multi-stage build, Compose, 리소스 제한 | 15h | ⬜ 예정 | |
+| **004** | ML Basics (PyTorch/TensorFlow) | 학습 루프, 평가 지표, ONNX/TorchScript, GPU 기초 | 20h | ✅ 완료 | [notes](modules/module-004-ml-basics/notes) |
+| **005** | Docker & Containerization | 이미지 레이어, multi-stage build, Compose, 리소스 제한 | 15h | 🔄 진행 중 | |
 | **006** | Kubernetes Introduction | Pod/Deployment/Service, ConfigMap/Secret, Helm, HPA | 20h | ⬜ 예정 | |
 | **007** | APIs & Web Services | REST, FastAPI, 인증, rate limiting, Locust 부하 테스트 | 15h | ⬜ 예정 | |
 | **008** | Databases & SQL | PostgreSQL, 인덱스/트랜잭션, Redis, SQLAlchemy, Alembic | 15h | ⬜ 예정 | |
@@ -74,7 +74,7 @@ Projects  ░░░░░░░░░░░░░░░░░░░░  0 / 5
 
 ```mermaid
 flowchart LR
-    M1[001 Python]:::done --> M2[002 Linux]:::done --> M3[003 Git]:::now --> M4[004 ML Basics] --> M5[005 Docker] --> M6[006 Kubernetes]
+    M1[001 Python]:::done --> M2[002 Linux]:::done --> M3[003 Git]:::done --> M4[004 ML Basics]:::done --> M5[005 Docker]:::now --> M6[006 Kubernetes]
     M6 --> P1([Project 01<br/>Model API])
     P1 --> M7[007 APIs] --> M8[008 DB] --> P2([Project 02<br/>K8s Serving])
     P2 --> M9[009 Monitoring] --> M10[010 Cloud] --> P3([Project 03<br/>ML Pipeline])
@@ -116,7 +116,7 @@ ai-infra-learning-log/
 
 ## 🔖 기록 규칙
 
-- **모듈 단위로 커밋**합니다. 모듈 작업은 `module-00X-<주제>` 브랜치에서 진행하고, 모듈 평가를 통과하면 `main`에 merge 후 태그를 붙입니다.
+- **레슨마다 `main`에 직접 커밋**합니다(노트와 실습 코드). README 진도 대시보드는 **모듈을 끝낼 때만** 갱신하고, 그때 `module-00X-done` 태그를 붙입니다.
 - 커밋 메시지
   - `feat(m00X): ...` 실습 코드
   - `docs(m00X): ...` 노트
