@@ -1,0 +1,4 @@
+FROM python:3.12-slim
+RUN dd if=/dev/zero of=/big.bin bs=1M count=50
+RUN rm /big.bin
+COPY memhog.py /app/memhog.py
