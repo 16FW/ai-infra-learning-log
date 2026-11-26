@@ -1,0 +1,6 @@
+dummy.bin
+__pycache__/
+*.pyc
+.git
+.venv
+.env
