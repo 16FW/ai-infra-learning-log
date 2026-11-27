@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      REDIS_HOST: redis
+    depends_on:
+      - redis
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - hitsdata:/data      # TODO 1
+
+volumes:                    # TODO 2
+  hitsdata:
